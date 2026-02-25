@@ -8,7 +8,7 @@
   "type": "module",
   "scripts": {
     "deploy": "npm run build && wrangler pages deploy",
-    "build": "remix vite:build",
+    "build": "vite build",
     "dev": "remix vite:dev",
     "test": "vitest --run",
     "test:watch": "vitest",
@@ -20,7 +20,7 @@
     "preview": "pnpm run build && pnpm run start"
   },
   "engines": {
-    "node": ">=18.18.0"
+    "node": ">=18"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^0.0.39",
